@@ -1,0 +1,32 @@
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+#load{
+    position: relative;
+    background: white;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#laod::before{
+    transform: rotate(120deg);
+
+}
+#load::after{
+    
+    transform: rotate(120deg);
+
+}

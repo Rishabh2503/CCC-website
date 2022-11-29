@@ -1,0 +1,19 @@
+.back1{
+    background-image: url("https://img.freepik.com/free-vector/cerulean-blue-curve-frame-template_53876-99029.jpg?w=1060&t=st=1668107301~exp=1668107901~hmac=44232f7b9ece07d2f89503bcbe9791781545c486315367750817805c759dab3c");
+    height: 93vh;
+    width: 70%;
+    margin: 20px auto;
+    margin-bottom: 40px;
+    padding: 50px 250px;
+    background-color: #ced7ef;
+    color: rgb(0, 0, 0);
+}
+.back1 h3{
+    text-align: center;
+    margin-top:-3rem ;
+    
+}
+.back1 h1{
+    text-align: center;
+    padding: 110px;
+}
