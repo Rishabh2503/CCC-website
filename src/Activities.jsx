@@ -25,7 +25,9 @@ const Activities =() => {
                      <h1 className="blast-text3">
                 <span className="text3">Events</span>
                 &nbsp;
-                <span className="text3">Deploy</span>
+                <span className="text3">We</span> 
+                &nbsp;
+                <span className="text3">Organize</span>
               </h1>
             </div>
                 <div className="col-lg-6 order-lg-2 header-img"><img src={web} className="img-fluid animated" alt="home img" />

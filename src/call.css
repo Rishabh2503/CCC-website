@@ -126,7 +126,7 @@
     position: relative;
     z-index: 2;
   }
-  @media (max-width: 700px) {
+  @media only screen and (max-width: 480px) and (min-width: 0px){
     .container3 .contact-text {
       font-size: 30px;
     }
@@ -141,6 +141,18 @@
     }
     .submit-btn .input-data {
       width: 40% !important;
+    }
+    .container3{
+      width:95%;
+      margin: 0;
+      height: 40rem;
+    }
+    #contacb{
+      margin-top: 6rem;
+    }
+    #contac-footer{
+      position: absolute;
+      top:40rem;
     }
   }
   /* @media screen and (min-width: 0rem) and (max-width:420rem)  {

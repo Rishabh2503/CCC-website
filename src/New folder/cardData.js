@@ -1,15 +1,13 @@
-import photo1 from './image/12.jpg'
-import photo2 from './image/s5.png'
-import photo3 from './image/s6.png'
-import photo4 from './image/s7.jpg'
-import photo5 from './image/s8.jpg'
+import photo1 from './images/12.jpg'
+import photo2 from './images/s5.png'
+import photo3 from './images/s6.png'
+import photo4 from './images/s7.jpg'
+import photo5 from './images/s8.jpg'
 import Card from './Card'
 import React from 'react'
 
-
 const cardArray = [
     {
-        
         src:photo1,insta: "https://instagram.com/prashant_shishodia_?igshid=YmMyMTA2M2Y", linkedIn: "https://www.linkedin.com/in/prashant-shishodia-663a2b157/", name: 'PRASHANT', about:'Flutter Developer'
     },
     {
@@ -62,7 +60,7 @@ const cardArray = [
     },
     {
         src:photo5,insta: '#', linkedIn:  "https://www.linkedin.com/in/ashna-arora/", name: 'ASHNA', about:'Web Developer'
-    }
+    },
     
     ];
 

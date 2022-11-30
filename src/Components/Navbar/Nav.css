@@ -1,13 +1,7 @@
-/* .pages {
-  color: #316685;
-  text-align: center;
-  font-size: calc(1.5rem + 2vw);
-  margin-top: 10%;
-  
- 
-} */
 
-.navbar {
+
+
+.navbarb {
   background-color: white;
   height: 5rem;
   background-attachment: scroll;
@@ -20,7 +14,7 @@
   z-index: 20;
 }
 
-.nav-container3 {
+.nav-containerb {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,16 +23,17 @@
   max-width: 1500px;
 }
 
-.main-container{
+.main-container3{
   position:absolute;
   top:0;
   bottom:0;
   left:0;
   right:0;
-  background-color:rgba(0,0,0,0.3);
+  background-color:rgba(0, 0, 0, 0.729);
+  z-index: 1;
 }
 
-.nav-logo {
+.nav-logob {
   color: #0077b6;
   align-items: center;
   margin-left: 20px;
@@ -47,10 +42,10 @@
   font-size: 2rem;
   flex-grow: 1;
 }
-.nav-logo img{
+.nav-logob img{
   width : 6%;
 }
-.nav-menu {
+.nav-menub {
   display: flex;
   list-style: none;
   text-align: center;
@@ -58,7 +53,7 @@
   margin-top: 1rem;
 }
 
-.nav-links {
+.nav-linksb {
   color: black;
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -69,12 +64,12 @@
   margin-left: 1rem;
 }
 
-.nav-item {
+.nav-itemb {
   line-height: 40px;
   margin-right: 1rem;
 }
 
-.nav-item:after {
+.nav-itemb:after {
   content: "";
   display: block;
   height: 3px;
@@ -83,24 +78,26 @@
   transition: width 0.7s ease, background-color 0.5s ease;
 }
 
-.nav-item:hover:after {
+.nav-itemb:hover:after {
   width: 100%;
   background: #69a2ee;
 }
 
-.nav-item .active5 {
+.nav-itemb .active5 {
   color: #0077b6;
   border: 2px solid #0077b6;
   border-radius: 10%;
+  
 }
 
-.nav-icon {
+.nav-iconb {
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+
+@media only screen and (max-width: 480px) and (min-width: 0px){
   
-  .nav-menu {
+  .nav-menub {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -110,26 +107,31 @@
     left: -110%;
     opacity: 1;
     transition: all 0.5s ease;
+    /* display: none; */
   }
-
-  .nav-menu .active5 {
+  .nav-linksb{
+    color: #8cff7b;
+  }
+  .nav-menub .active5 {
     background: white;
     left: 0px;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 1;
+    z-index: 2;
   }
-  .nav-item .active5 {
-    color: #0077b6;
+   .active5 {
+    color: #0b3cff;
     border: none;
+    left: 0;
+    z-index: 3;
   }
-  .nav-links {
+  .nav-linksb {
     padding: 1.5rem;
     width: 100%;
     display: table;
   }
 
-  .nav-icon {
+  .nav-iconb {
     display: block;
     position: absolute;
     top: 0;
@@ -138,5 +140,11 @@
     font-size: 1.8rem;
     cursor: pointer;
     color: #0077b6;
+  }
+  .nav-logob{
+    font-size: 0;
+  }
+  .nav-logob img{
+    width: 3rem;
   }
 }

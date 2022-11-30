@@ -1,76 +1,46 @@
-import React, { useState } from "react";
+import React from "react";
 import web from "../src/image/7.png";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
-import {db} from './firebase'
-import {setDoc,collection} from './firebase/firestore'
-
-
-
+import { useState } from 'react'
+import axios from 'axios'
 import "../src/call.css";
 const Contac = () => {
-  const [user, setUser] = useState({
-    firstname: "",
-    lastname: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-  let name, value;
-  const getUserData = (event) => {
-    name = event.target.name;
-    value = event.target.value;
-    setUser({ ...user, [name]: value });
-  };
+  const [userlastnamea,setlastnamea]=useState("")
+  function setTheUserlastnamea(e){
+    setlastnamea(e.target.value)
+  }
+  const [userfirstnamea,setfirstnamea]=useState("")
+
+  const [useremaila,setemaila]=useState("")
+
+  const [userphonea,setphonea]=useState("")
+
+  const [usermessagea,setmessagea]=useState("")
+
+  var data={firstname:userfirstnamea,lastname:userlastnamea,email:useremaila,phonenumber:userphonea,message:usermessagea}
+
+  function SendData(event){
+    console.log(data)
+    event.preventDefault()
+    setfirstnamea("")
+    setlastnamea("")
+    setemaila("")
+    setphonea("")
+    setmessagea("")
+   axios.post('https://contact-production.up.railway.app/contactus',data).then((res)=>{
+    console.log(res);
+    console.log("hellloo")
+   }).catch(e => {
+    console.log(e);
+});
+  }
 
 
-  const contact=async()=>{
-    await setDoc(collection(db,"people"),{
-        firstName:user.firstname,
-        lastname:user.lastname,
-        email:user.email,
-        phone: user.phone,
-        message : user.message
-    })
-    }
-    
 
 
-  const postData = async (e) => {
-    e.preventDefault();
-    const {firstname,lastname,email,phone,message} = user;
 
-    if(firstname && lastname && email && phone && message){
-      const res = await fetch(
-         "https://contactform-dd833-default-rtdb.firebaseio.com/Contactform.json",
-         { method: "POST", headers :{
-            "Content-Type":"application.json",
-            body : JSON.stringify({
-               firstname,
-               lastname,
-               email,
-               phone,
-               message,
-   
-            })
-         }, }
-       );
-       if(res){
-         setUser({
-            firstname: "",
-            lastname: "",
-            email: "",
-            phone: "",
-            message: "",
-          });
-          alert("Thank You For submiting");
-       }
-    }
-    else{
-      alert("Fill all data");
-    }
-    
-  };
+  
   return (
     <>
       <Navbar />
@@ -79,7 +49,7 @@ const Contac = () => {
           <div className="row">
             <div className="col-10 mx-auto">
               <div className="row">
-                <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
+                <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column" id="contacb">
                 <h1 className="blast-text3">
                 <span className="text3">Let's</span>
                 &nbsp;
@@ -117,8 +87,8 @@ const Contac = () => {
                   required
                   id="fname"
                   name="firstname"
-                  value={user.firstname}
-                  onChange={getUserData}
+                  value={userfirstnamea}
+                  onChange={(e)=>{setfirstnamea(e.target.value)}}
                   autoComplete="off"
                 />
                 <div className="underline"></div>
@@ -130,8 +100,8 @@ const Contac = () => {
                   required
                   id="lname"
                   name="lastname"
-                  value={user.lastname}
-                  onChange={getUserData}
+                  value={userlastnamea}
+                  onChange={(e)=>{setlastnamea(e.target.value)}}
                 />
                 <div className="underline"></div>
                 <label>Last Name</label>
@@ -144,8 +114,8 @@ const Contac = () => {
                   required
                   id="email"
                   name="email"
-                  value={user.email}
-                  onChange={getUserData}
+                  value={useremaila}
+                  onChange={(e)=>{setemaila(e.target.value)}}
                 />
                 <div className="underline"></div>
                 <label>Email Address</label>
@@ -158,8 +128,8 @@ const Contac = () => {
                   required
                   id="phone"
                   name="phone"
-                  value={user.phone}
-                  onChange={getUserData}
+                  value={userphonea}
+                  onChange={(e)=>{setphonea(e.target.value)}}
                 />
                 <div className="underline"></div>
                 <label>Phone Number</label>
@@ -174,8 +144,8 @@ const Contac = () => {
                   id="message"
                   name="message"
                   placeholder="Your message here.."
-                  value={user.message}
-                  onChange={getUserData}
+                  value={usermessagea}
+                  onChange={(e)=>{setmessagea(e.target.value)}}
                 ></textarea>
                 <br />
                 <div className="underline"></div>
@@ -184,7 +154,7 @@ const Contac = () => {
                 <div className="form-row submit-btn">
                   <div className="input-data">
                     <div className="inner"></div>
-                    <input type="submit" value="submit"/>
+                    <input type="submit" onClick={SendData} />
                   </div>
                 </div>
               </div>
@@ -192,7 +162,7 @@ const Contac = () => {
           </form>
         </div>
       </section>
-      <section>
+      <section id="contac-footer">
         <Footer />
       </section>
     </>

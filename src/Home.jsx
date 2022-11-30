@@ -48,6 +48,8 @@ const Home =() => {
                 <span className="text3">N</span>
                 <span className="text3">K</span>
                 &nbsp;
+                <span className="text3">|</span>
+                &nbsp;
                 <span className="text3">D</span>
                 <span className="text3">E</span>
                 <span className="text3">V</span>
@@ -55,9 +57,9 @@ const Home =() => {
                 <span className="text3">L</span>
                 <span className="text3">O</span>
                 <span className="text3">P</span>
-                <span className="text3">E</span>
+                &nbsp;
+                <span className="text3">|</span>
                  &nbsp; 
-                <br />
                 <span className="text3">D</span>
                 <span className="text3">E</span>
                 <span className="text3">P</span>

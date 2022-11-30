@@ -1,5 +1,6 @@
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -146,12 +147,12 @@ HEADER
 }
 
 
-.text3 {
+.text3{
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-iteration-count: 1;
   color: #0077b6;
-  font-family: "Rampart One", cursive;
+  font-family: 'Poppins', sans-serif; 
 }
 
 .text3:hover {
@@ -164,7 +165,7 @@ HEADER
   animation-fill-mode: both;
   animation-iteration-count: 1;
   color: #1cece2;
-  font-family: "Rampart One", cursive;
+  font-family: 'Poppins', sans-serif; 
   font-size: 4rem;
 }
 .text9:hover {
@@ -630,6 +631,10 @@ home page part 3
   text-decoration: none;
   color: #fff;
 }
+#Team2special{
+  position: relative;
+  left : 18rem;
+}
 /* =====================================
 Responsive Section
 ======================================= */
@@ -833,7 +838,7 @@ Responsive Section
   }
   .team1-area{
     width: 50%;
-    right: 8rem;
+    right: 11.5rem;
   }
   .single1-team{
     margin-left: 2rem;
@@ -851,6 +856,7 @@ Responsive Section
   .text9{
     font-size: 1.9rem;
   }
+  
    /* .team1-img img {
     height: 110%;
 }
@@ -858,6 +864,48 @@ Responsive Section
   height: 80px;
   width: 100%;
 }  */
+#regfooter{
+  position: absolute;
+  top:0;
+}
+.slide-image {
+  width: 35%;
+  height: 50%;
+  margin-top: 80px;
+  position: absolute;
+  object-fit: cover;
+  right: 52.5rem;
+  border-radius: 10px;
+}
+.all-dots {
+  width: 20%;
+  height: 15%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 0%;
+  z-index: 200;
+  right: 0%;
+}
+.box9{
+  visibility: hidden;
+  display: none;
+}
+.slide-image {
+  width: 35%;
+  height: 50%;
+  margin-top: 0px;
+  right: 52.5rem;
+  border-radius: 10px;
+}
+.btn-get-started{
+  width : 30%;
+  font-weight: 600;
+  font-size: 12px;
+}
+#fourthyear{
+  left:15rem;
+}
 }
 /* @media screen and (max-width : 759rem) and (min-width: 422rem)   {
   

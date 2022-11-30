@@ -37,9 +37,14 @@ function Register() {
     setTheUseremail("")
     setTheUserphone("")
     setFirst("")
-   axios.post('https://regis-production.up.railway.app/register',data).then((res)=>{
-    console.log(res)
-   })
+   axios.post('https://regis-production.up.railway.app/register',data).then((respose)=>{
+    console.log(respose)
+    if(respose.status===400){
+      console.log(respose.data.msg)
+    }
+   }).catch((e) => {
+    console.log(e);
+});
   }
 
   return (
@@ -52,7 +57,7 @@ function Register() {
         <div className="image-holder6">
           <img src={Bg} alt="image" className='bg17' />
         </div>
-        <form onsubmit="sendEmail(); reset(); return false" id="form6">
+        <form onSubmit="sendEmail(); reset(); return false" id="form6">
         <h3>Registration Form</h3>
           <div className="form-group6">
             <input
@@ -148,7 +153,8 @@ function Register() {
         </form>
           </div>
         </div>
-        <Footer />
+        <section id='regfooter'><Footer /></section>
+        
     </>
   )
 }

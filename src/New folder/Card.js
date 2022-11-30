@@ -2,7 +2,6 @@ import React from 'react'
 import './Card.css';
 // import image12 from './images/12.jpg'
 const Card= (props) => {
-  console.log(props);
   return (
 //    <div className='row'>
          <div className="card">

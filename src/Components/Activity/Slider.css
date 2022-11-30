@@ -1,8 +1,4 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-  }
-  
+
  .slider-container9 {
     height: 80%;
     width: 100%;
@@ -154,7 +150,44 @@
   .play-pause {
     color: black;
   }
-
+  @media only screen and (max-width: 990x) and (min-width: 489px){
+    .slide-image {
+      width: 32%;
+      height: 50%;
+      margin-top: 0px;
+      right: 80.5rem;
+      border-radius: 10px;
+      left: 0;
+      right: 80.5rem;
+    }
+  }
+  @media only screen and (max-width: 480px) and (min-width: 0px){
+    .slide-image {
+      width: 32%;
+      height: 50%;
+      margin-top: 0px;
+      position: absolute;
+      object-fit: cover;
+      left: -12rem;
+      right: 0rem;
+      border-radius: 10px;
+      
+    }
+    .gallery{
+      margin-top: 4rem;
+      font-size: 30px;
+    }
+    .all-dots {
+      width: 20%;
+      height: 15%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      top: 50%;
+      z-index: 200;
+      left: 45%;
+    }
+  }
 
 
 /* 

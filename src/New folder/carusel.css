@@ -84,7 +84,7 @@
 margin-left: px;
 } */
 
- @media screen and (max-width:1131px) {
+ /* @media screen and (min-width:1131px) {
    .slider1{
       display:none;
    }
@@ -97,7 +97,33 @@ margin-left: px;
    .btn2{
       margin-right: 10rem;
    }
- }
+ } */
+ /* @media only screen and (max-width: 480px) and (min-width: 0px){
+    .slide-image {
+        width: 35%;
+        height: 50%;
+        margin-top: 80px;
+        position: absolute;
+        object-fit: cover;
+        right: 52.5rem;
+        border-radius: 10px;
+    }
+    .all-dots {
+        width: 20%;
+        height: 15%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 65%;
+        z-index: 200;
+        right: 35%;
+    }
+    .box9{
+        visibility: hidden;
+        display: none;
+    }
+ } */
+
  /* .container {
     position: relative;
     width: 20vw;
