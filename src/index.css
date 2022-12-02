@@ -633,7 +633,12 @@ home page part 3
 }
 #Team2special{
   position: relative;
-  left : 18rem;
+  left : 0rem;
+}
+#fourth-year3{
+  display: inline-flex;
+  position: relative;
+  left: 32%;
 }
 /* =====================================
 Responsive Section
@@ -705,6 +710,11 @@ Responsive Section
   }
 } 
 @media screen and (min-width: 482px) and (max-width:821px){
+ 
+  #whoarewe200{
+    position: relative;
+    right: 4.5rem;
+  }
   #header .animated{
     width: 80%;
     height: 30%;
@@ -712,7 +722,7 @@ Responsive Section
     left: 1.5rem;
   }
   body{
-    background-size: 100% 8%;
+    background-size: 90% 5%;
   }
   #header h1{
      margin: 0; padding: 0;
@@ -748,12 +758,14 @@ Responsive Section
   .bol {
     position: absolute;
     top: 37rem;
-    left: 25rem;
+    left: 15.5rem;
     opacity: 0.4;
   }
   .whatwedo {
     background-image: none;
-    margin-top: 25rem;
+    margin-top: 10rem;
+    position: relative;
+    right: 4.5rem;
     margin-bottom: 0; padding-bottom: 0;
   }
   .whoarewe{
@@ -771,6 +783,14 @@ Responsive Section
  
 
 @media only screen and (max-width: 480px) and (min-width: 0px){
+  #fourth-year3{
+    display: inline-flex;
+    position: relative;
+    left: 12rem;
+  }
+  .text3{
+    font-weight: 600;
+  }
   #header .animated{
     width: 80%;
     height: 30%;

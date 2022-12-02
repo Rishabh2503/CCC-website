@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import web from "../src/image/6.png";
+import Tableb from "./Components/Table/Tableb"
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import Manya from "./image/society/Manya Chaudhary ML and uiux.jpeg";
@@ -156,7 +157,7 @@ const Team = () => {
                   <div className="col-md-3">
                     <div className="single1-team">
                       <div className="team1-img">
-                        <img src={Aagiya} alt="" width={255} height={263} />
+                        <img src={Unknow2} alt="" width={255} height={263} />
                       </div>
                       <div className="team1-content">
                         <div className="team1-info">
@@ -221,7 +222,7 @@ const Team = () => {
                   <div className="col-md-3">
                     <div className="single1-team">
                       <div className="team1-img">
-                        <img src={varsha} alt="" width={255} height={263} />
+                        <img src={Unknow1} alt="" width={255} height={263} />
                       </div>
                       <div className="team1-content">
                         <div className="team1-info">
@@ -343,129 +344,71 @@ const Team = () => {
                 {/* 3rd row */}
                 <br />
                 <br />
-                <div className="row" id="fourth-year">
-                  <div className="col-md-3">
-                    <div className="single1-team">
-                      <div className="team1-img">
-                        <img src={Unknow1} alt="" width={255} height={263} />
-                      </div>
-                      <div className="team1-content">
-                        <div className="team1-info">
-                          <h3>Manya Chaudhary</h3>
-                          <p>Machine Learning & UI/Ux</p>
-                        </div>
-                        <p className="team1-text">
-                          
-                          <a href="https://www.instagram.com/m.a.n.y.aa_/?next=%2F">
-                            <i
-                              className="fa-brands fa-instagram fa-2x "
-                              id="iconanimate"
-                            ></i>
-                          </a>
-                          <i
-                            className="fa-brands fa-linkedin fa-2x "
-                            id="iconanimate"
-                          ></i>
-                          <i
-                            className="fa-brands fa-github fa-2x "
-                            id="iconanimate"
-                          ></i>
-                        </p>
-                      </div>
+                <div className="row" id="fourth-year3">
+                <div className="col-md-6">
+                <div className="single1-team">
+                    <div className="team1-img">
+                      <img src={Unknow3} alt="" width={255} height={263} />
                     </div>
-                  </div>
-                  {/* 2nd member */}
-                  <div className="col-md-3">
-                    <div className="single1-team">
-                      <div className="team1-img">
-                        <img src={Unknow2} alt="" width={255} height={263} />
+                    <div className="team1-content">
+                      <div className="team1-info">
+                        <h3></h3>
+                        <p>App Developer</p>
                       </div>
-                      <div className="team1-content">
-                        <div className="team1-info">
-                          <h3>Kartikay Singhal </h3>
-                          <p>Machine Learning</p>
-                        </div>
-                        <p className="team1-text">
-                          
-                          <a href="https://www.instagram.com/kartikay_singhal/?next=%2F">
-                            <i
-                              className="fa-brands fa-instagram fa-2x "
-                              id="iconanimate"
-                            ></i>
-                          </a>
+                      <p className="team1-text">
+                        
+                        <a href="https://www.instagram.com/mr_x0209/?next=%2F">
                           <i
-                            className="fa-brands fa-linkedin fa-2x "
+                            className="fa-brands fa-instagram fa-2x "
                             id="iconanimate"
                           ></i>
-                          <i
-                            className="fa-brands fa-github fa-2x "
-                            id="iconanimate"
-                          ></i>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="single1-team">
-                      <div className="team1-img">
-                        <img src={Unknow3} alt="" width={255} height={263} />
-                      </div>
-                      <div className="team1-content">
-                        <div className="team1-info">
-                          <h3>Aagiya Singh</h3>
-                          <p>Web Developer</p>
-                        </div>
-                        <p className="team1-text">
-                          
-                          <a href="https://www.instagram.com/_.aagiyasingh/?next=%2F">
-                            <i
-                              className="fa-brands fa-instagram fa-2x "
-                              id="iconanimate"
-                            ></i>
-                          </a>
-                          <i
-                            className="fa-brands fa-linkedin fa-2x "
-                            id="iconanimate"
-                          ></i>
-                          <i
-                            className="fa-brands fa-github fa-2x "
-                            id="iconanimate"
-                          ></i>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div className="single1-team">
-                      <div className="team1-img">
-                        <img src={jigyansh} alt="" width={255} height={263} />
-                      </div>
-                      <div className="team1-content">
-                        <div className="team1-info">
-                          <h3>Samiksha Jain</h3>
-                          <p>Web Developer</p>
-                        </div>
-                        <p className="team1-text">
-                          
-                          <a href="https://www.instagram.com/samiksha7302/?next=%2F">
-                            <i
-                              className="fa-brands fa-instagram fa-2x "
-                              id="iconanimate"
-                            ></i>
-                          </a>
-                          <i
-                            className="fa-brands fa-linkedin fa-2x "
-                            id="iconanimate"
-                          ></i>
-                          <i
-                            className="fa-brands fa-github fa-2x "
-                            id="iconanimate"
-                          ></i>
-                        </p>
-                      </div>
+                        </a>
+                        <i
+                          className="fa-brands fa-linkedin fa-2x "
+                          id="iconanimate"
+                        ></i>
+                        <i
+                          className="fa-brands fa-github fa-2x "
+                          id="iconanimate"
+                        ></i>
+                      </p>
                     </div>
                   </div>
                 </div>
+                {/* 2nd member */}
+                <div className="col-md-6">
+                <div className="single1-team">
+                    <div className="team1-img">
+                      <img src={jigyansh} alt="" width={255} height={263} />
+                    </div>
+                    <div className="team1-content">
+                      <div className="team1-info">
+                        <h3>jigyansh</h3>
+                        <p>Web Developer</p>
+                      </div>
+                      <p className="team1-text">
+                        
+                        <a href="https://www.instagram.com/_sarthak_srivastav._/?next=%2F">
+                          <i
+                            className="fa-brands fa-instagram fa-2x "
+                            id="iconanimate"
+                          ></i>
+                        </a>
+                        <i
+                          className="fa-brands fa-linkedin fa-2x "
+                          id="iconanimate"
+                        ></i>
+                        <i
+                          className="fa-brands fa-github fa-2x "
+                          id="iconanimate"
+                        ></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                
+              </div>
                 
               </div>
             </div>
@@ -1241,8 +1184,8 @@ const Team = () => {
                 </div>
               </div>
               <br /><br />
-              <div id="Team2special">
-              <div className="row" id="fourth-year">
+            
+              <div className="row" id="fourth-year3">
                 <div className="col-md-6">
                 <div className="single1-team">
                     <div className="team1-img">
@@ -1307,7 +1250,7 @@ const Team = () => {
                 
                 
               </div>
-            </div>
+           
               
             </div>
           </div>
@@ -1317,10 +1260,18 @@ const Team = () => {
           <h1 className="d-card-title"> ALUMNI</h1>
           <div className="row--img">{CardData}</div>
         </section> */}
-
+        
+        {/*======================================  ======================================   ====================================== */}
         <section>
+          <Tableb />
+        </section>
+        {/*======================================  ======================================   ====================================== */}
+         {/*======================================  ======================================   ====================================== */}
+         <section>
           <Footer />
         </section>
+        {/*======================================  ======================================   ====================================== */}
+       
       </>
     );
   }

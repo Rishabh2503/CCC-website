@@ -4,7 +4,8 @@ import  Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 // import Slider from "./Components/Slider/Slider";
 import Carusel from "./Components/Activity/carusel";
-
+import Table1 from "./Components/Table/table1"
+import Gallery from "./Components/Gallery/Gallery"
 
 
 const Activities =() => {
@@ -40,7 +41,13 @@ const Activities =() => {
         {/* -------------------------- */}
         <Carusel />
         {/* -------------------------------- */}
+        {/* -------------------------- */}
+        <Table1 />
+        {/* -------------------------------- */}
         <section>
+            <section>
+                <Gallery />
+            </section>
             <Footer />
         </section>
         </>
