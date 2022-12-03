@@ -5,3 +5,11 @@ table, th, td {
     width: 80%;
     margin: 2rem 10rem;
 }
+@media only screen and (max-width: 480px) and (min-width: 0px){
+.table1{
+  width : 90%;
+  margin: 0 1rem;
+  position: relative;
+  left: 0;
+}
+}

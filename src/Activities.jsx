@@ -42,7 +42,8 @@ const Activities =() => {
         <Carusel />
         {/* -------------------------------- */}
         {/* -------------------------- */}
-        <Table1 />
+        <section className="reveal"> <Table1 /></section>
+        
         {/* -------------------------------- */}
         <section>
             <section>

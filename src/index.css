@@ -640,6 +640,9 @@ home page part 3
   position: relative;
   left: 32%;
 }
+.teamfooter{
+  margin-top: 20rem;
+}
 /* =====================================
 Responsive Section
 ======================================= */
@@ -988,3 +991,4 @@ Responsive Section
   }
 } */
 
+/* ======================================= */

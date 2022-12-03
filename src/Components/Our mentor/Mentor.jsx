@@ -11,7 +11,7 @@ export default function Mentor() {
         <div className='mentorc3'><h1>Our Faculty</h1></div>
         <div className='mentor-img'>
           <img src={sir} alt="" />
-          <p className='mentorimpp2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <p className='mentorimpp2'>Santosh Mishra, Assistant Professor in IT department. having 15 years of teaching and 3 years of industry experience as Java software developer.Gold faculty partner of Infosys. Awarded with content guru award. Was mentor of Hackathon winning team of 2019. Programming knowledge of Java, C, C++, Python and PHP.Area of my research are different meta- heuristics Optimization algorithms like PSO, MFO, GSA, GA etc.</p>
           <div className='mentor-imgp'><h5>Mr.Santosh&nbsp;</h5><h5>Mishra</h5></div>
           {/* <div className='mentor-imgp2 '><p>Assistant Professor 
 It depart</p></div> */}

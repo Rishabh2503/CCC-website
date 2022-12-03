@@ -42,6 +42,7 @@ import Saurbh from "./image/society/Saurbh.jpg"
 import Arpit from "./image/society/Arpit.jpeg"
 import Shruti from "./image/society/Shruti.jpeg"
 import Raghav from './image/society/Raghav.jpg'
+
 const Team = () => {
   const [tabIndex, setTabIndex] = useState(1);
   {
@@ -352,7 +353,7 @@ const Team = () => {
                     </div>
                     <div className="team1-content">
                       <div className="team1-info">
-                        <h3></h3>
+                        <h3>Sir</h3>
                         <p>App Developer</p>
                       </div>
                       <p className="team1-text">
@@ -1262,12 +1263,16 @@ const Team = () => {
         </section> */}
         
         {/*======================================  ======================================   ====================================== */}
-        <section>
+        <section className="reveal">
           <Tableb />
         </section>
         {/*======================================  ======================================   ====================================== */}
+        <section className="Aluminiarea2 reveal">
+          <h1 className="d-card-title"> ALUMNI</h1>
+          <div className="row99">{CardData}</div>
+        </section>
          {/*======================================  ======================================   ====================================== */}
-         <section>
+         <section className="teamfooter">
           <Footer />
         </section>
         {/*======================================  ======================================   ====================================== */}

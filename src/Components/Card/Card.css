@@ -5,23 +5,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-.row--img{
-    /* padding :10px; */
-    /* width: 90%; */
-    display: grid;
+.row99{
+    padding :10px;
+    width: 70%;
+    height: 0vh;
+    /* display: grid;
     grid-template-columns: repeat(6,1fr);
-    justify-content: space-around;
-    align-items: center;
-    margin: 3rem 10rem;
-    /* margin-left: 50px;  */
-    /* padding-left: 150px; */
-    /* position: relative; */
-    /* top: 5rem; */
+    justify-content:c:\Users\sarth\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.html space-around;
+    align-items: center;*/ 
     /* grid-column-start: 1;
     grid-column-end: 3; */
-    /* height: 2rem; */
+    position: relative;
+    top: 10rem;
+    padding-left: 32rem;
+    top: -15px;
     /* column-gap:-10rem; */
-    /* row-gap: -2rem; */
+    /* row99-gap: -2rem; */
 
 }
 /* .all{
@@ -30,23 +29,24 @@
 /* .head{
     margin-top: 50px;
 } */
-.row--img .card{
-    width: 145px;
-    height: 160px;
+.row99 .card99{
+    width: 85px;
+    height: 90px;
     position: relative;
-    border-radius: 55px 0px 55px 0px;
-    box-shadow: 4px 8px 8px #111111;
+    /* border-radius: 10px ;
+    box-shadow: 3px 6px 6px #111111; */
     overflow: hidden;
     cursor: pointer;
-    margin: 10px 0px 20px 0px;
-    display: grid;
+    /* margin: 10px 40px 20px 0px; */
+    /* display: grid; */
+    float: left;
 }
-  .row--img .card img{
+  .row99 .card99 img{
     width: 105%;
     height: 105%;
     object-fit: cover;
 }
-.row--img .card .content{
+.row99 .card99 .content99{
     position:absolute;
     width: 100%;
     height: 100%;
@@ -56,65 +56,86 @@
     place-content: center;
     text-align: center;
     background: linear-gradient(45deg, rgb(18, 165, 244), hwb(230 3% 7% / 0.874));
-    transition: all 0.5s linear;
+    transition: all 0.4s linear;
 }
- .row--img .card .content.box1{
-    clip-path: circle(0% at 0 100%);
+ .row99 .card99 .content99.box99{
+    clip-path: inset(0 0 0 100%);
 } 
-.row--img .card:hover .content.box1{
-    clip-path: circle(141.4% at 0 100%);
+.row99 .card99:hover .content99.box99{
+    clip-path: inset(0 0 0 0);
 } 
 
-.row--img .card .content h3{
-    font-size: 20px;
-    color: #fff;
-    margin-top: 15rem;
-    font-weight: 300;
-    line-height: 10px;
+.row99 .card99 .content99 h3{
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 150;
+    line-height: 12px;
     letter-spacing: 2px;
-    padding-bottom: 5px;
-    z-index: 10000;
+    padding-top: -70px;
+    margin: 4px;
 }
-.row--img .card .content p{
-    font-size: 12;
-    color: #fff;
-    padding-bottom: 1px;
+.row99 .card99 .content99 p{
+    font-size: 10px;
+    color: #ffffff;
+    padding-bottom: 3px;
+    margin-bottom: -2px;
 }
-/* .row--img .card .content ul{
+/* .row99 .card99 .content ul{
     display: block;
 } */
-.row--img .card .content ul li{
+.row99 .card99 .content99 ul li{
     display: inline-block;
-    margin: 0 5px;
+    margin-left: -35px;
 }
-.row--img .card .content ul li a{
+.row99 .card99 .content99 ul li a{
     display: block;
     color: #ffffff;
-    font-size: 20px;
-    padding-right: 60px;
-    padding-top: 20px;
+    font-size: 11px;
+    padding: 3px;
     transition: all 0.5s linear;
 }
-.row--img .card .content ul li:hover a{
+.row99 .card99 .content99 ul li:hover a{
     transform: translateY(-6px);
 }
-
-/* .container {
-    width: 100vh;
-    height: 100vh;
-  } */
-  
-  /* .box {
-    width: 200px;
-    height: 200px;
-    transition-duration: 4s;
-    transition-property: width;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.row991 .card99 .content99 h3{
+    font-size: 1px;
+    color: #ffffff;
+    font-weight: 50;
+    line-height: 7px;
+    letter-spacing: 1px;
+    padding-bottom: 3px;
+}
+@media(max-width:768px) {
+    .row99{
+        width: 10%;
+        padding-left: 150px;
+      
+    }
     
-  }
-   */
-  /* .container:hover .box {
-    width: 800px;
-  } */
+}
+/* @media (min-width:768px) {
+   
+            .card99-flex-item {
+                width: 33.33%;
+                padding-right: 1em; 
+            } 
+            .card99-flex-item:nth-child(3n) {
+                padding-right: 0;
+            } 
+            .card99-flex-image img {
+                opacity: 0.8; 
+            }
+            .card99-flex-wrapper:hover {
+                cursor: pointer;
+                background-color: white;
+                box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+            }
+            .card99-flex-wrapper:hover .card99-flex-image img {
+                opacity: 1;
+                transition: opacity 0.5s cubic-bezier(.43,.41,.22,.91);
+            }
+            .card99-flex-wrapper:hover .card99-flex-button {
+                background-color: #FFFFCC; 
+            } */
+        /* } */
+    

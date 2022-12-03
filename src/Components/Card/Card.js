@@ -1,13 +1,12 @@
 import React from 'react'
-import '../Card/Card.css';
+import './Card.css';
 // import image12 from './images/12.jpg'
 const Card= (props) => {
-  console.log(props);
   return (
 //    <div className='row'>
-         <div className="card">
+         <div className="card99">
             <img src={props.src}alt=""/>
-            <div className="content box1">
+            <div className="content99 box99">
                 <h3>{props.name}</h3>
                 <p>{props.about}</p>
                 <ul>
